@@ -1,0 +1,51 @@
+.main-text,
+form {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px 0;
+}
+
+h1 {
+  padding-top: 50px;
+}
+
+.form-row {
+  display: block;
+  width: 100%;
+}
+
+.left-col {
+  width: 25%;
+  display: flex;
+}
+.right-col {
+  width: 65%;
+  display: flex;
+}
+label,
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+}
+
+textarea {
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  resize: none;
+}

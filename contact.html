@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-contact.css" />
     <title>Kontakti - Reinis Rutentals</title>
   </head>
   <body>
@@ -28,14 +29,53 @@
     </header>
     <main>
       <div class="main-text">
-        <h1>Kontakti</h1>
+        <h1>Sazinies ar mani</h1>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque
-          dolor repellat omnis numquam neque maiores, aliquid cumque dolores
-          asperiores eaque quia minima facere ducimus animi quisquam nisi amet!
-          Quis, quidem?
+          ja vēlies sadarboties IT jomā, vajadzīga palīdzība WEB lapas izstrādē,
+          vai ir jautājumi par izpletņlēkšanu un vēja tuneļiem, tad droši
+          aizpildi formu un es 2-3 dienu laikā atbildēšu uz norādīto epastu.
         </p>
       </div>
+      <form>
+        <div class="form-row">
+          <div class="left-col">
+            <label for="fname">Vārds</label>
+            <input type="text" id="fname" name="fname" placeholder="Vārds" /></div>
+          <div class="right-col">
+            <label for="lname">Uzvārds</label>
+            <input type="text" id="lname" name="lname" placeholder="Uzvārds" />
+          </div>
+        <div class="form-row">
+          <div class="left-col">
+            <label for="email">E-pasts</label>
+            <input type="email" id="email" name="email" placeholder="e-pasta adrese" />
+          </div>
+          <div class="right-col">
+            <label for="subject">Tēma</label>
+            <select id="subject" name="reason">
+              <option value="job">Darba piedāvājums</option>
+              <option value="web">WEB lapas izstrāde</option>
+              <option value="skydive">Izpletņlēkšana</option>
+              <option value="windtunnel">Vēja tuneļi</option>
+              <option value="other">cits temats</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <label for="lname">Ziņas teksts</label>
+        </div>
+        <div class="form-row">
+          <textarea
+          type="textarea"
+          id="lname"
+          name="lname"
+          placeholder="Write something..">
+          </textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn-submit">Nosūtīt</button>
+        </div>
+      </form>
       <div class="footer-info">
         <div class="navbar-icons">
           <a href="https://github.com/ReinisRu/">
