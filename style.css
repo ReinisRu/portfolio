@@ -103,6 +103,8 @@ body {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 12px;
 }
 
 .navbar-top {
@@ -184,6 +186,9 @@ a {
 .parallax_layer-base {
   transform: translateZ(0);
   z-index: 4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .parallax_layer-back {
@@ -219,12 +224,15 @@ h1 {
 .title-text {
   position: absolute;
   left: 30%;
-  top: 50%;
+  top: 60%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  font-size: x-large;
+  font-size: large;
   text-shadow: 2px 2px 4px #000000;
   z-index: 6;
+}
+.my-name {
+  font-size: xx-large;
 }
 .title-img {
   position: absolute;
@@ -237,7 +245,56 @@ h1 {
   box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.5);
 }
 
+#group2 {
+  z-index: 3;
+}
+
 #group2 .parallax_layer-back {
+  background-image: url(media/sky.jpeg);
+  background-color: rgb(185, 185, 185);
+}
+
+#group3 {
+  z-index: 4;
+}
+
+#group3 .parallax_layer-base {
+  background-image: url(media/freefly.jpg);
+  background-color: rgb(185, 185, 185);
+}
+
+#group4 {
+  z-index: 2;
+}
+
+#group4 .parallax_layer-back {
+  background-image: url(media/aeroshow.jpg);
+  background-color: rgb(185, 185, 185);
+}
+
+#group5 {
+  z-index: 4;
+}
+
+#group5 .parallax_layer-base {
+  background-image: url(media/training.jpg);
+  background-color: rgb(185, 185, 185);
+}
+
+#group6 {
+  z-index: 2;
+}
+
+#group6 .parallax_layer-back {
+  background-image: url(media/coding.jpg);
+  background-color: rgb(185, 185, 185);
+}
+
+#group9 {
+  z-index: 4;
+}
+
+#group9 .parallax_layer-base {
   background-image: url(media/morning-lake.jpeg);
   background-color: rgb(185, 185, 185);
 }
