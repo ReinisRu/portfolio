@@ -1,10 +1,15 @@
+html,
+body {
+  overflow: visible;
+}
+
 main {
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .main-text,
 form {
-  width: 90%;
+  width: 95%;
   max-width: 600px;
   margin: auto;
 }
@@ -34,13 +39,13 @@ label {
   font-size: small;
 }
 
-input,
-select {
+input {
   padding: 12px;
+  margin-top: 12px;
   background-color: transparent;
-  border: 1px solid darkgray;
+  border: 1px solid var(--color-gray-1);
   border-radius: 4px;
-  color: darkgray;
+  color: var(--color-gray-0);
   transition-duration: 0.4s;
 }
 
@@ -57,23 +62,48 @@ textarea {
 }
 
 ::placeholder {
-  color: darkgray;
-  opacity: 0.8; /* Firefox */
+  color: var(--color-gray-1);
+  opacity: 1; /* Firefox */
 }
 
 button {
   margin-top: 12px;
   padding: 12px;
   background-color: var(--color-gray-3);
-  border: 1px solid darkgray;
+  border: 1px solid var(--color-gray-1);
   border-radius: 4px;
   color: white;
   transition-duration: 0.4s;
 }
 
 input:hover,
-select:hover,
 textarea:hover,
 button:hover {
-  border: 1px solid red;
+  border: 1px solid var(--color-red);
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  border: 1px solid var(--color-red);
+  background-color: var(--color-gray-3);
+}
+
+.footer-info {
+  position: static;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    margin-top: 60px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
 }

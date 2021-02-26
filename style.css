@@ -205,7 +205,7 @@ a {
   z-index: 5;
 }
 #group1 .parallax_layer-base {
-  background: var(--color-gray-2);
+  background: var(--color-gray-3);
   opacity: 1;
 }
 
@@ -285,4 +285,31 @@ a {
 #group9 .parallax_layer-base {
   background-image: url(media/morning-lake.jpeg);
   background-color: rgb(185, 185, 185);
+}
+
+@media only screen and (max-width: 480px) {
+  a {
+    font-size: 14px;
+  }
+  .title-text {
+    width: 90%;
+    left: 50%;
+    top: 70%;
+    font-size: medium;
+    z-index: 6;
+  }
+  .my-name {
+    font-size: x-large;
+  }
+  .title-img {
+    left: 50%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 80%;
+  }
+  .navbar-left,
+  .navbar-right {
+    margin: 0;
+  }
 }

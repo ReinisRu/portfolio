@@ -38,27 +38,34 @@
       </div>
       <form>
         <div class="form-row">
-          <label for="fname">Vārds</label>
-          <input type="text" id="fname" name="fname" placeholder="Vārds" />
+          <!-- <label for="fname">Vārds</label> -->
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="vārds"
+            required
+          />
         </div>
         <div class="form-row">
-          <label for="email">E-pasts</label>
+          <!-- <label for="email">E-pasts</label> -->
           <input
             type="email"
             id="email"
             name="email"
-            placeholder="e-pasta adrese"
+            placeholder="e-pasts"
+            required
           />
         </div>
         <div class="form-row">
-          <label for="subject">Tēma</label>
-          <select id="subject" name="subject">
-            <option value="job">Darba piedāvājums</option>
-            <option value="web">WEB lapas izstrāde</option>
-            <option value="skydive">Izpletņlēkšana</option>
-            <option value="windtunnel">Vēja tuneļi</option>
-            <option value="other">cits temats</option>
-          </select>
+          <!-- <label for="subject">Tēma</label> -->
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="virsraksts"
+            required
+          />
         </div>
         <div class="form-row">
           <label for="message">Ziņas teksts</label>
@@ -66,7 +73,8 @@
             type="textarea"
             id="message"
             name="message"
-            placeholder="raksti ziņu šeit.."
+            placeholder="raksti ziņu šeit"
+            required
           >
           </textarea>
         </div>
