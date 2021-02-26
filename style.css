@@ -96,6 +96,9 @@ body {
   margin: 0;
   overflow: hidden;
 }
+/* main {
+  margin-top: 50px;
+} */
 .title {
   text-align: center;
   position: absolute;
@@ -129,9 +132,7 @@ body {
   margin: 0 10px;
   display: flex;
 }
-.navbar-center a {
-  margin: 0 5px;
-}
+
 a {
   text-decoration: none;
   color: var(--color-gray-0);
@@ -153,14 +154,6 @@ a {
 .icon:hover {
   filter: drop-shadow(3px 3px 2px rgba(255, 69, 58, 1));
 }
-
-/* main {
-  position: relative;
-  display: block;
-  top: 50px;
-  max-width: 1024px;
-  margin: auto;
-} */
 
 .parallax {
   height: 100vh;
@@ -202,11 +195,6 @@ a {
 .parallax_layer-fore {
   transform: translateZ(90px) scale(0.7);
   z-index: 6;
-}
-
-h1 {
-  display: block;
-  margin: auto;
 }
 
 .main-text {
